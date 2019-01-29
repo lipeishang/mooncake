@@ -1,9 +1,14 @@
 const path = require("path");
 const webpack = require("webpack");
-const bundlePath = path.resolve(__dirname, "dist/");
+const bundlePath = path.resolve(__dirname, "./dist/");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
+  output: {
+    path: bundlePath,
+    filename: 'index_bundle.js'
+  },
   module: {
     rules: [
       {
@@ -14,19 +19,32 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(jpg|png|gif|bmp|jpeg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10240,
+            }
+          }
+        ]
       }
     ]
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },
-  output: {
-    publicPath: bundlePath,
-    filename: "bundle.js"
-  },
   devServer: {
-    contentBase: path.join(__dirname,'public'),
+    contentBase: bundlePath,
     port: 3000,
-    publicPath: "http://localhost:3000/dist"
+    publicPath: "http://localhost:3000/dist",
+    hot: true
   },
-  plugins: [ new webpack.HotModuleReplacementPlugin() ]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      hash: true
+    })
+  ]
 };
