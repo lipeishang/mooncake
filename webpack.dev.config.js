@@ -2,7 +2,6 @@ const webpack = require('webpack');
 
 // 读取同一目录下的 base config
 const config = require('./webpack.base.config');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 config.mode = 'development';
@@ -24,14 +23,6 @@ config.module.rules.push(
     ],
     exclude: /node_modules/
   }
-);
-
-config.plugins.push(
-  new HtmlWebpackPlugin({
-    filename: 'index.html',
-    hash: true,
-    template: './public/index.html'
-  })
 );
 
 config.plugins.push(

@@ -72,6 +72,11 @@ module.exports = {
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },
   plugins: [
-    new CleanWebpackPlugin([ASSETS_BUILD_PATH], { verbose: false })
+    new CleanWebpackPlugin([ASSETS_BUILD_PATH], { verbose: false }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      hash: true,
+      template: './public/index.html'
+    })
   ]
 };
