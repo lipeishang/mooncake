@@ -3,8 +3,8 @@ const path = require('path');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const SRC_PATH = path.resolve(__dirname + './src/');
-const ASSETS_BUILD_PATH = path.resolve(__dirname + "./dist/");
+const SRC_PATH = path.resolve(__dirname + 'src/');
+const ASSETS_BUILD_PATH = path.resolve(__dirname + "dist/");
 
 module.exports = {
   entry: './src/index.js',
