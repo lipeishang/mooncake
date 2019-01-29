@@ -13,6 +13,7 @@ config.devServer = {
   publicPath: '/dist'
 };
 
+
 config.module.rules.push(
   {
     test: /\.less$/,

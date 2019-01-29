@@ -3,8 +3,9 @@ const path = require('path');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const SRC_PATH = path.resolve(__dirname + 'src/');
-const ASSETS_BUILD_PATH = path.resolve(__dirname + "dist/");
+const SRC_PATH = path.resolve(__dirname, 'src/');
+const ASSETS_BUILD_PATH = path.resolve(__dirname, "dist/");
+console.log(ASSETS_BUILD_PATH);
 
 module.exports = {
   entry: './src/index.js',
@@ -72,11 +73,9 @@ module.exports = {
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },
   plugins: [
-    new CleanWebpackPlugin([ASSETS_BUILD_PATH], { verbose: false }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      hash: true,
-      template: './public/index.html'
+      hash: true
     })
   ]
 };
