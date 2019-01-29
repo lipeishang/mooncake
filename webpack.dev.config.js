@@ -11,7 +11,7 @@ config.devServer = {
   contentBase: path.join(__dirname, 'public'),
   hot: true,
   port: 3000,
-  publicPath: "http://localhost:3000/dist"
+  publicPath: '/dist'
 };
 
 config.module.rules.push(
@@ -33,7 +33,9 @@ config.plugins.push(
 );
 
 config.plugins.push(
-  new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin({
+    hash: true
+  })
 );
 
 module.exports = config;

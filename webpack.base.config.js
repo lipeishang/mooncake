@@ -10,21 +10,19 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: ASSETS_BUILD_PATH,
-    filename: './bundle.js'
+    filename: 'bundle.js'
   },
   module: {
     rules: [
-      {
-        enforce: 'pre',  // ESLint 优先级高于其他 JS 相关的 loader
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader'
-      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         // 建议把 babel 的运行时配置放在 .babelrc 里，从而与 eslint-loader 等共享配置
         loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       },
       {
         test: /\.(png|jpg|gif)$/,

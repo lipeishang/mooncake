@@ -27,12 +27,6 @@ config.plugins.push(
   }),
   // 启动 minify
   new webpack.LoaderOptionsPlugin({ minimize: true }),
-  // 抽取 CSS 文件
-  new ExtractTextPlugin({
-    filename: '[name].css',
-    allChunks: true,
-    ignoreOrder: true
-  })
 );
 
 module.exports = config;
