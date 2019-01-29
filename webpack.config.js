@@ -1,50 +1,38 @@
-const path = require("path");
-const webpack = require("webpack");
-const bundlePath = path.resolve(__dirname, "./dist/");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: bundlePath,
-    filename: 'index_bundle.js'
-  },
-  module: {
-    rules: [
+// 读取同一目录下的 base config
+const config = require('./webpack.base.config');
+
+config.module.rules.push(
+  {
+    test: /\.less$/,
+    use: ExtractTextPlugin.extract(
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        options: { presets: ['env'] }
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.(jpg|png|gif|bmp|jpeg)$/,
         use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 10240,
-            }
-          }
-        ]
+          'css-loader',
+          'less-loader'
+        ],
+        fallback: 'style-loader'
       }
-    ]
-  },
-  resolve: { extensions: ['*', '.js', '.jsx'] },
-  devServer: {
-    contentBase: bundlePath,
-    port: 3000,
-    publicPath: "http://localhost:3000/dist",
-    hot: true
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      hash: true
-    })
-  ]
-};
+    ),
+    exclude: /node_modules/
+  }
+);
+
+config.plugins.push(
+  // 官方文档推荐使用下面的插件确保 NODE_ENV
+  new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+  }),
+  // 启动 minify
+  new webpack.LoaderOptionsPlugin({ minimize: true }),
+  // 抽取 CSS 文件
+  new ExtractTextPlugin({
+    filename: '[name].css',
+    allChunks: true,
+    ignoreOrder: true
+  })
+);
+
+module.exports = config;
