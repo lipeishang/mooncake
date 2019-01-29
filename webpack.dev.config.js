@@ -28,14 +28,14 @@ config.module.rules.push(
 
 config.plugins.push(
   new HtmlWebpackPlugin({
+    filename: 'index.html',
+    hash: true,
     template: './public/index.html'
   })
 );
 
 config.plugins.push(
-  new webpack.HotModuleReplacementPlugin({
-    hash: true
-  })
+  new webpack.HotModuleReplacementPlugin()
 );
 
 module.exports = config;
