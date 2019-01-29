@@ -8,7 +8,7 @@ const path = require('path');
 config.mode = 'development';
 
 config.devServer = {
-  contentBase: path.join(__dirname,'public'),
+  contentBase: path.join(__dirname, 'public'),
   hot: true,
   port: 3000,
   publicPath: "http://localhost:3000/dist"
@@ -25,11 +25,6 @@ config.module.rules.push(
     exclude: /node_modules/
   }
 );
-
-config.externals = {
-  react: 'React',
-  'react-dom': 'ReactDOM'
-};
 
 config.plugins.push(
   new HtmlWebpackPlugin({
