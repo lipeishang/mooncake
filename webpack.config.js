@@ -2,9 +2,9 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // 读取同一目录下的 base config
-const config = require('./webpack.base.config');
+const { web, node } = require('./webpack.base.config');
 
-config.module.rules.push(
+web.module.rules.push(
   {
     test: /\.less$/,
     use: ExtractTextPlugin.extract(
@@ -20,7 +20,7 @@ config.module.rules.push(
   }
 );
 
-config.plugins.push(
+web.plugins.push(
   // 官方文档推荐使用下面的插件确保 NODE_ENV
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
@@ -29,4 +29,4 @@ config.plugins.push(
   new webpack.LoaderOptionsPlugin({ minimize: true }),
 );
 
-module.exports = config;
+module.exports = web;
