@@ -8,9 +8,9 @@ if (module.hot) {
   module.hot.accept();
 }
 
-ReactDOM.render((
+ReactDOM.render(
   <BrowserRouter>
     <Route path="/" component={App} />
-  </BrowserRouter>
-), document.getElementById('root')
+  </BrowserRouter>,
+  document.getElementById('root')
 );

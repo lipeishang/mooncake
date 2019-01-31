@@ -26,8 +26,7 @@ module.exports.web = {
   output: {
     publicPath: '/',
     path: WEB_PATH,
-    filename: '[name].index.js',
-    chunkFilename: '[name].js',
+    filename: '[name].index.js'
   },
   module: {
     rules: [
