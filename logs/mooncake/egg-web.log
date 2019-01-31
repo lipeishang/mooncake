@@ -110,3 +110,5 @@
 2019-01-29 22:03:57,441 INFO 41771 [egg:core] dump config after load, 6ms
 2019-01-29 22:03:57,462 INFO 41771 [egg-watcher:application] watcher start success
 2019-01-29 22:03:57,467 INFO 41771 [egg:core] dump config after ready, 4ms
+2019-01-29 23:01:56,007 WARN 41693 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-01-29 23:01:56,064 WARN 41693 [ClusterClient:Watcher] follower closed, and try to init it again

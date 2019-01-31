@@ -99,7 +99,6 @@
         "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/config/locales",
         "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-schedule@3.6.0@egg-schedule/config/locales",
         "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-multipart@2.4.0@egg-multipart/config/locales",
-        "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development/config/locales",
         "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/config/locales",
         "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/locales",
         "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/locales",
@@ -112,7 +111,7 @@
       "functionName": "__"
     },
     "watcher": {
-      "type": "development",
+      "type": "default",
       "eventSources": {
         "default": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/default",
         "development": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/development"
@@ -121,7 +120,7 @@
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
-        "file": "/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake/egg-schedule.log"
+        "file": "/Users/lipeishang/logs/mooncake/egg-schedule.log"
       }
     },
     "schedule": {
@@ -143,13 +142,6 @@
         "cron": "0 30 4 * * *"
       }
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false
-    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -164,18 +156,19 @@
       "dir": "/Users/lipeishang/WorkSpacce/mooncake/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": false,
+      "buffer": true,
       "maxFiles": 1000,
+      "maxAge": 31536000,
       "files": "<LRU>"
     },
     "view": {
       "root": "/Users/lipeishang/WorkSpacce/mooncake/app/view",
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
     },
-    "env": "local",
+    "env": "prod",
     "name": "mooncake",
     "keys": "<String len: 27>",
     "proxy": false,
@@ -286,21 +279,19 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake",
+      "dir": "/Users/lipeishang/logs/mooncake",
       "encoding": "utf8",
-      "env": "local",
+      "env": "prod",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": false,
+      "disableConsoleAfterReady": true,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "mooncake-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "application"
     },
@@ -337,8 +328,7 @@
       "overrideMethod",
       "session",
       "securities",
-      "i18n",
-      "eggLoaderTrace"
+      "i18n"
     ],
     "workerStartTimeout": 600000,
     "serverTimeout": null,
@@ -470,21 +460,6 @@
       "from": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/plugin.js",
       "path": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-multipart@2.4.0@egg-multipart",
       "version": "2.4.0"
-    },
-    "development": {
-      "enable": true,
-      "package": "egg-development",
-      "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
-      "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
-      "from": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/plugin.js",
-      "path": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development",
-      "version": "2.4.1"
     },
     "logrotator": {
       "enable": true,

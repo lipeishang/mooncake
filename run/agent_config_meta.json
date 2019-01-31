@@ -29,7 +29,7 @@
       "value": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-security@2.4.2@egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-security@2.4.2@egg-security/config/config.local.js",
+      "enable": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-security@2.4.2@egg-security/config/config.default.js",
       "maxAge": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-security@2.4.2@egg-security/config/config.default.js",
       "includeSubdomains": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-security@2.4.2@egg-security/config/config.default.js"
     },
@@ -83,7 +83,7 @@
     "cookieMaxAge": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-i18n@2.0.0@egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.local.js",
+    "type": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js",
     "eventSources": {
       "default": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js",
       "development": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js"
@@ -114,13 +114,6 @@
       "cron": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js"
     }
   },
-  "development": {
-    "watchDirs": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development/config/config.default.js",
-    "fastReady": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development/config/config.default.js",
-    "overrideDefault": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development/config/config.default.js"
-  },
   "logrotator": {
     "filesRotateByHour": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/config/config.default.js",
     "hourDelimiter": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/config/config.default.js",
@@ -135,12 +128,13 @@
     "dir": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.default.js",
     "dynamic": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.default.js",
     "preload": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.default.js",
-    "buffer": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.default.js",
-    "maxFiles": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.default.js"
+    "buffer": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.prod.js",
+    "maxFiles": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.default.js",
+    "maxAge": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-static@2.1.1@egg-static/config/config.prod.js"
   },
   "view": {
     "root": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/config.default.js",
-    "cache": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/config.local.js",
+    "cache": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/config.default.js",
     "defaultExtension": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/config.default.js",
     "defaultViewEngine": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/config.default.js",
     "mapping": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-view@2.1.1@egg-view/config/config.default.js"
@@ -266,9 +260,7 @@
     "coreLogName": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/config.default.js",
     "agentLogName": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/config.default.js",
     "errorLogName": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/config.default.js",
-    "coreLogger": {
-      "consoleLevel": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/config.local.js"
-    },
+    "coreLogger": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/config.default.js",
     "allowDebugAtProd": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/config.default.js"
   },
   "httpclient": {

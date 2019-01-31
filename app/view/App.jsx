@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.reqMessage}>1234</button>
+        <button onClick="">1234</button>
       </div>
     )
   }
