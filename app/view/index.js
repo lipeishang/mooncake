@@ -9,8 +9,7 @@ if (module.hot) {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
+  (<BrowserRouter>
     <Route path="/" component={App} />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+  </BrowserRouter>),
+  document.getElementById('root'));

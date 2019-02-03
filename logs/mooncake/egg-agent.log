@@ -116,3 +116,43 @@
 2019-01-29 22:37:04,031 INFO 41738 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/lipeishang/WorkSpacce/mooncake/app/view/App.jsx","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":3145307,"size":230,"blocks":8,"atimeMs":1548772624019.7546,"mtimeMs":1548772624020.107,"ctimeMs":1548772624020.107,"birthtimeMs":1548768269100.2761,"atime":"2019-01-29T14:37:04.020Z","mtime":"2019-01-29T14:37:04.020Z","ctime":"2019-01-29T14:37:04.020Z","birthtime":"2019-01-29T13:24:29.100Z"},"remove":false,"isDirectory":false,"isFile":true}
 2019-01-29 22:37:04,179 INFO 41738 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/lipeishang/WorkSpacce/mooncake/app/view/App.jsx","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":3145307,"size":230,"blocks":8,"atimeMs":1548772624166.9504,"mtimeMs":1548772624167.2625,"ctimeMs":1548772624167.2625,"birthtimeMs":1548768269100.2761,"atime":"2019-01-29T14:37:04.167Z","mtime":"2019-01-29T14:37:04.167Z","ctime":"2019-01-29T14:37:04.167Z","birthtime":"2019-01-29T13:24:29.100Z"},"remove":false,"isDirectory":false,"isFile":true}
 2019-01-29 22:37:04,179 INFO 41691 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/lipeishang/WorkSpacce/mooncake/app/view/App.jsx","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":3145307,"size":230,"blocks":8,"atimeMs":1548772624166.9504,"mtimeMs":1548772624167.2625,"ctimeMs":1548772624167.2625,"birthtimeMs":1548768269100.2761,"atime":"2019-01-29T14:37:04.167Z","mtime":"2019-01-29T14:37:04.167Z","ctime":"2019-01-29T14:37:04.167Z","birthtime":"2019-01-29T13:24:29.100Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-02-03 14:32:34,756 INFO 94384 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-02-03 14:32:34,854 INFO 94384 [egg:core] dump config after load, 6ms
+2019-02-03 14:32:34,909 INFO 94384 [egg-watcher] Start watching: ["/Users/lipeishang/WorkSpacce/mooncake/app","/Users/lipeishang/WorkSpacce/mooncake/config","/Users/lipeishang/WorkSpacce/mooncake/mocks","/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy","/Users/lipeishang/WorkSpacce/mooncake/app.js"]
+2019-02-03 14:32:34,909 INFO 94384 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app"
+2019-02-03 14:32:34,910 INFO 94384 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/config"
+2019-02-03 14:32:34,910 INFO 94384 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks"
+2019-02-03 14:32:34,910 INFO 94384 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy"
+2019-02-03 14:32:34,910 INFO 94384 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app.js"
+2019-02-03 14:32:34,910 INFO 94384 [egg-watcher:agent] watcher start success
+2019-02-03 14:32:34,934 INFO 94384 [egg:core] dump config after ready, 3ms
+2019-02-03 14:33:46,299 INFO 94531 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-02-03 14:33:46,392 INFO 94531 [egg:core] dump config after load, 4ms
+2019-02-03 14:33:46,440 INFO 94531 [egg-watcher] Start watching: ["/Users/lipeishang/WorkSpacce/mooncake/app","/Users/lipeishang/WorkSpacce/mooncake/config","/Users/lipeishang/WorkSpacce/mooncake/mocks","/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy","/Users/lipeishang/WorkSpacce/mooncake/app.js"]
+2019-02-03 14:33:46,440 INFO 94531 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app"
+2019-02-03 14:33:46,441 INFO 94531 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/config"
+2019-02-03 14:33:46,441 INFO 94531 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks"
+2019-02-03 14:33:46,441 INFO 94531 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy"
+2019-02-03 14:33:46,441 INFO 94531 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app.js"
+2019-02-03 14:33:46,441 INFO 94531 [egg-watcher:agent] watcher start success
+2019-02-03 14:33:46,460 INFO 94531 [egg:core] dump config after ready, 3ms
+2019-02-03 14:34:30,471 INFO 94614 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-02-03 14:34:30,578 INFO 94614 [egg:core] dump config after load, 4ms
+2019-02-03 14:34:30,632 INFO 94614 [egg-watcher] Start watching: ["/Users/lipeishang/WorkSpacce/mooncake/app","/Users/lipeishang/WorkSpacce/mooncake/config","/Users/lipeishang/WorkSpacce/mooncake/mocks","/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy","/Users/lipeishang/WorkSpacce/mooncake/app.js"]
+2019-02-03 14:34:30,632 INFO 94614 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app"
+2019-02-03 14:34:30,632 INFO 94614 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/config"
+2019-02-03 14:34:30,633 INFO 94614 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks"
+2019-02-03 14:34:30,633 INFO 94614 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy"
+2019-02-03 14:34:30,633 INFO 94614 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app.js"
+2019-02-03 14:34:30,633 INFO 94614 [egg-watcher:agent] watcher start success
+2019-02-03 14:34:30,652 INFO 94614 [egg:core] dump config after ready, 4ms
+2019-02-03 14:36:57,037 INFO 94793 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-02-03 14:36:57,115 INFO 94793 [egg:core] dump config after load, 4ms
+2019-02-03 14:36:57,158 INFO 94793 [egg-watcher] Start watching: ["/Users/lipeishang/WorkSpacce/mooncake/app","/Users/lipeishang/WorkSpacce/mooncake/config","/Users/lipeishang/WorkSpacce/mooncake/mocks","/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy","/Users/lipeishang/WorkSpacce/mooncake/app.js"]
+2019-02-03 14:36:57,158 INFO 94793 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app"
+2019-02-03 14:36:57,158 INFO 94793 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/config"
+2019-02-03 14:36:57,158 INFO 94793 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks"
+2019-02-03 14:36:57,158 INFO 94793 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/mocks_proxy"
+2019-02-03 14:36:57,158 INFO 94793 [egg-watcher] Start watching: "/Users/lipeishang/WorkSpacce/mooncake/app.js"
+2019-02-03 14:36:57,159 INFO 94793 [egg-watcher:agent] watcher start success
+2019-02-03 14:36:57,177 INFO 94793 [egg:core] dump config after ready, 4ms

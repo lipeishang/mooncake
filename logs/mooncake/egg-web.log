@@ -112,3 +112,59 @@
 2019-01-29 22:03:57,467 INFO 41771 [egg:core] dump config after ready, 4ms
 2019-01-29 23:01:56,007 WARN 41693 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
 2019-01-29 23:01:56,064 WARN 41693 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-02-03 14:32:35,515 INFO 94385 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-03 14:32:35,549 INFO 94385 [egg-multipart] stream mode enable
+2019-02-03 14:32:35,655 INFO 94385 [egg-static] starting static serve /public/ -> /Users/lipeishang/WorkSpacce/mooncake/app/public
+2019-02-03 14:32:35,658 INFO 94385 [egg-security] use csrf middleware
+2019-02-03 14:32:35,659 INFO 94385 [egg-security] use methodnoallow middleware
+2019-02-03 14:32:35,660 INFO 94385 [egg-security] use noopen middleware
+2019-02-03 14:32:35,661 INFO 94385 [egg-security] use nosniff middleware
+2019-02-03 14:32:35,662 INFO 94385 [egg-security] use xssProtection middleware
+2019-02-03 14:32:35,663 INFO 94385 [egg-security] use xframe middleware
+2019-02-03 14:32:35,665 INFO 94385 [egg-security] use dta middleware
+2019-02-03 14:32:35,665 INFO 94385 [egg-security] compose 7 middlewares into one security middleware
+2019-02-03 14:32:35,678 INFO 94385 [egg:core] dump config after load, 8ms
+2019-02-03 14:32:35,695 INFO 94385 [egg-watcher:application] watcher start success
+2019-02-03 14:32:35,701 INFO 94385 [egg:core] dump config after ready, 4ms
+2019-02-03 14:33:47,131 INFO 94533 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-03 14:33:47,168 INFO 94533 [egg-multipart] stream mode enable
+2019-02-03 14:33:47,257 INFO 94533 [egg-static] starting static serve /public/ -> /Users/lipeishang/WorkSpacce/mooncake/app/public
+2019-02-03 14:33:47,261 INFO 94533 [egg-security] use csrf middleware
+2019-02-03 14:33:47,263 INFO 94533 [egg-security] use methodnoallow middleware
+2019-02-03 14:33:47,264 INFO 94533 [egg-security] use noopen middleware
+2019-02-03 14:33:47,265 INFO 94533 [egg-security] use nosniff middleware
+2019-02-03 14:33:47,266 INFO 94533 [egg-security] use xssProtection middleware
+2019-02-03 14:33:47,267 INFO 94533 [egg-security] use xframe middleware
+2019-02-03 14:33:47,268 INFO 94533 [egg-security] use dta middleware
+2019-02-03 14:33:47,268 INFO 94533 [egg-security] compose 7 middlewares into one security middleware
+2019-02-03 14:33:47,279 INFO 94533 [egg:core] dump config after load, 4ms
+2019-02-03 14:33:47,294 INFO 94533 [egg-watcher:application] watcher start success
+2019-02-03 14:33:47,299 INFO 94533 [egg:core] dump config after ready, 4ms
+2019-02-03 14:34:31,250 INFO 94622 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-03 14:34:31,285 INFO 94622 [egg-multipart] stream mode enable
+2019-02-03 14:34:31,376 INFO 94622 [egg-static] starting static serve /public/ -> /Users/lipeishang/WorkSpacce/mooncake/app/public
+2019-02-03 14:34:31,379 INFO 94622 [egg-security] use csrf middleware
+2019-02-03 14:34:31,381 INFO 94622 [egg-security] use methodnoallow middleware
+2019-02-03 14:34:31,382 INFO 94622 [egg-security] use noopen middleware
+2019-02-03 14:34:31,383 INFO 94622 [egg-security] use nosniff middleware
+2019-02-03 14:34:31,384 INFO 94622 [egg-security] use xssProtection middleware
+2019-02-03 14:34:31,384 INFO 94622 [egg-security] use xframe middleware
+2019-02-03 14:34:31,385 INFO 94622 [egg-security] use dta middleware
+2019-02-03 14:34:31,385 INFO 94622 [egg-security] compose 7 middlewares into one security middleware
+2019-02-03 14:34:31,395 INFO 94622 [egg:core] dump config after load, 5ms
+2019-02-03 14:34:31,409 INFO 94622 [egg-watcher:application] watcher start success
+2019-02-03 14:34:31,414 INFO 94622 [egg:core] dump config after ready, 3ms
+2019-02-03 14:36:57,714 INFO 94794 [egg:logger] init all loggers with options: {"dir":"/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mooncake-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-03 14:36:57,750 INFO 94794 [egg-multipart] stream mode enable
+2019-02-03 14:36:57,817 INFO 94794 [egg-static] starting static serve /public/ -> /Users/lipeishang/WorkSpacce/mooncake/app/public
+2019-02-03 14:36:57,819 INFO 94794 [egg-security] use csrf middleware
+2019-02-03 14:36:57,820 INFO 94794 [egg-security] use methodnoallow middleware
+2019-02-03 14:36:57,820 INFO 94794 [egg-security] use noopen middleware
+2019-02-03 14:36:57,821 INFO 94794 [egg-security] use nosniff middleware
+2019-02-03 14:36:57,822 INFO 94794 [egg-security] use xssProtection middleware
+2019-02-03 14:36:57,822 INFO 94794 [egg-security] use xframe middleware
+2019-02-03 14:36:57,823 INFO 94794 [egg-security] use dta middleware
+2019-02-03 14:36:57,823 INFO 94794 [egg-security] compose 7 middlewares into one security middleware
+2019-02-03 14:36:57,831 INFO 94794 [egg:core] dump config after load, 4ms
+2019-02-03 14:36:57,845 INFO 94794 [egg-watcher:application] watcher start success
+2019-02-03 14:36:57,850 INFO 94794 [egg:core] dump config after ready, 3ms

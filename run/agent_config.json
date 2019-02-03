@@ -83,7 +83,7 @@
       "cookieMaxAge": "1y"
     },
     "watcher": {
-      "type": "default",
+      "type": "development",
       "eventSources": {
         "default": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/default",
         "development": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/development"
@@ -92,7 +92,7 @@
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
-        "file": "/Users/lipeishang/logs/mooncake/egg-schedule.log"
+        "file": "/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake/egg-schedule.log"
       }
     },
     "schedule": {
@@ -114,6 +114,13 @@
         "cron": "0 30 4 * * *"
       }
     },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -128,18 +135,17 @@
       "dir": "/Users/lipeishang/WorkSpacce/mooncake/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": true,
-      "maxFiles": 1000,
-      "maxAge": 31536000
+      "buffer": false,
+      "maxFiles": 1000
     },
     "view": {
       "root": "/Users/lipeishang/WorkSpacce/mooncake/app/view",
-      "cache": true,
+      "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
     },
-    "env": "prod",
+    "env": "local",
     "name": "mooncake",
     "keys": "<String len: 27>",
     "proxy": false,
@@ -154,6 +160,8 @@
       "dependencies": {
         "@types/react": "^16.7.22",
         "@types/react-dom": "^16.0.11",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015": "^6.24.1",
         "egg": "^2.2.1",
         "egg-scripts": "^2.5.0",
         "egg-view-react-ssr": "^2.4.1",
@@ -161,9 +169,11 @@
         "extract-text-webpack-plugin": "^3.0.2",
         "react": "^16.7.0",
         "react-dom": "^16.7.0",
-        "react-router-dom": "^4.4.0-beta.6",
+        "react-router-dom": "^4.3.1",
         "typescript": "^3.2.4",
-        "url-loader": "^1.1.2"
+        "uglifyjs-webpack-plugin": "^2.1.1",
+        "url-loader": "^1.1.2",
+        "webpack-merge": "^4.2.1"
       },
       "devDependencies": {
         "autod": "^3.0.1",
@@ -195,17 +205,16 @@
         "node": ">=8.9.0"
       },
       "scripts": {
-        "start": "egg-scripts start --daemon --title=egg-server-mooncake",
-        "stop": "egg-scripts stop --title=egg-server-mooncake",
-        "dev": "webpack-dev-server --config webpack.dev.config.js && egg-bin dev",
+        "build": "rimraf dist && npm run build:client && npm run build:server",
+        "build:client": "webpack --config webpack.config.client.js && egg-bin dev",
+        "build:server": "webpack --config webpack.config.server.js && egg-bin dev",
         "debug": "egg-bin debug",
         "test": "npm run lint -- --fix && npm run test-local",
         "test-local": "egg-bin test",
         "cov": "egg-bin cov",
         "lint": "eslint .",
         "ci": "npm run lint && npm run cov",
-        "autod": "autod",
-        "build": "webpack --optimize-minimize"
+        "autod": "autod"
       },
       "ci": {
         "version": "8"
@@ -249,19 +258,21 @@
       }
     },
     "logger": {
-      "dir": "/Users/lipeishang/logs/mooncake",
+      "dir": "/Users/lipeishang/WorkSpacce/mooncake/logs/mooncake",
       "encoding": "utf8",
-      "env": "prod",
+      "env": "local",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": true,
+      "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "mooncake-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {},
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -414,6 +425,21 @@
       "from": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/plugin.js",
       "path": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-multipart@2.4.0@egg-multipart",
       "version": "2.4.0"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg@2.14.2@egg/config/plugin.js",
+      "path": "/Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-development@2.4.1@egg-development",
+      "version": "2.4.1"
     },
     "logrotator": {
       "enable": true,

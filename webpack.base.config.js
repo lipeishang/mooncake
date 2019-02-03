@@ -1,37 +1,30 @@
 'use strict';
-const path = require('path');
 const webpack = require('webpack');
-const BUILD_PATH = path.resolve(__dirname, 'dist/node/');
-const WEB_PATH = path.resolve(__dirname, 'dist/app/');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const entry = path.resolve(__dirname, 'app/view/index.js');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
-module.exports.node = {
-  target: 'node',
-  entry: entry,
-  output: {
-    publicPath: '/',
-    path: BUILD_PATH,
-    filename: '[name].index.js',
-    libraryTarget: 'commonjs',
-  },
-  module: {},
-  plugins: [],
-  optimization: {},
-  stats: 'errors-only',
-};
+let env = "dev";
+let isProd = false;
+let prodPlugins = [];
 
-module.exports.web = {
-  entry: entry,
-  output: {
-    publicPath: '/',
-    path: WEB_PATH,
-    filename: '[name].index.js'
+// 生产环境添加压缩插件
+if (process.env.NODE_ENV === "production") {
+  env = "prod";
+  isProd = true;
+  prodPlugins = [
+    new UglifyJsPlugin({ sourceMap: true })
+  ];
+}
+
+const baseWebpackConfig = {
+  devtool: isProd ? "#source-map" : "#cheap-module-source-map",
+  resolve: {
+    extensions: [".js", ".jsx", ".json"]
   },
+  mode: process.env.NODE_ENV,
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /(\.jsx|\.js)$/,
         exclude: /node_modules/,
         // 建议把 babel 的运行时配置放在 .babelrc 里，从而与 eslint-loader 等共享配置
         loader: 'babel-loader'
@@ -55,44 +48,21 @@ module.exports.web = {
           ]
       },
       {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use:
-          [
-            {
-              loader: 'url-loader',
-              options:
-              {
-                limit: 8192,
-                mimetype: 'application/font-woff',
-                name: 'fonts/[name].[ext]'
-              }
-            }
-          ]
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use:
-          [
-            {
-              loader: 'file-loader',
-              options:
-              {
-                limit: 8192,
-                mimetype: 'application/font-woff',
-                name: 'fonts/[name].[ext]'
-              }
-            }
-          ]
+        test: /\.(woff2?|eot|ttf|otf)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: "static/fonts/[name].[hash:7].[ext]"
+        }
       }
     ]
   },
-  resolve: { extensions: ['*', '.js', '.jsx'] },
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      hash: true
-    })
-  ],
-  optimization: {},
-  stats: 'errors-only',
-};
+    new webpack.DefinePlugin({
+      "process.env": require("./" + env + ".env")
+    }),
+    ...prodPlugins
+  ]
+}
+
+module.exports = baseWebpackConfig;

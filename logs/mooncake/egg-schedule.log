@@ -30,3 +30,19 @@
 2019-01-29 22:03:57,474 INFO 41738 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 6963526ms at 2019-01-30 00:00:01.000
 2019-01-29 22:03:57,386 INFO 41771 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js
 2019-01-29 22:03:57,386 INFO 41771 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-03 14:32:35,707 INFO 94384 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js next time will execute after 34044296ms at 2019-02-04 00:00:00.002
+2019-02-03 14:32:35,707 INFO 94384 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 34045293ms at 2019-02-04 00:00:01.000
+2019-02-03 14:32:35,549 INFO 94385 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js
+2019-02-03 14:32:35,549 INFO 94385 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-03 14:33:47,168 INFO 94533 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js
+2019-02-03 14:33:47,168 INFO 94533 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-03 14:33:47,305 INFO 94531 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js next time will execute after 33972698ms at 2019-02-04 00:00:00.003
+2019-02-03 14:33:47,305 INFO 94531 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 33973695ms at 2019-02-04 00:00:01.000
+2019-02-03 14:34:31,420 INFO 94614 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js next time will execute after 33928583ms at 2019-02-04 00:00:00.003
+2019-02-03 14:34:31,420 INFO 94614 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 33929580ms at 2019-02-04 00:00:01.000
+2019-02-03 14:34:31,284 INFO 94622 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js
+2019-02-03 14:34:31,284 INFO 94622 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-03 14:36:57,856 INFO 94793 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js next time will execute after 33782147ms at 2019-02-04 00:00:00.003
+2019-02-03 14:36:57,856 INFO 94793 [Timer] /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 33783144ms at 2019-02-04 00:00:01.000
+2019-02-03 14:36:57,750 INFO 94794 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/clean_log.js
+2019-02-03 14:36:57,750 INFO 94794 [egg-schedule]: register schedule /Users/lipeishang/WorkSpacce/mooncake/node_modules/_egg-logrotator@3.0.5@egg-logrotator/app/schedule/rotate_by_file.js
